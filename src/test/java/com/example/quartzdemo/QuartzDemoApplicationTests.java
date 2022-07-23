@@ -11,7 +11,6 @@ public class QuartzDemoApplicationTests {
 
 	@Test
 	public void contextLoads() {
-		Sysytem.out.println("Test");
 	}
 
 }
