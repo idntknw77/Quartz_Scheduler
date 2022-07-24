@@ -104,7 +104,7 @@ public class EmailJobSchedulerController {
             ZonedDateTime dateTime = ZonedDateTime.of(scheduleEmailRequest.getDateTime(), scheduleEmailRequest.getTimeZone());
             if(dateTime.isBefore(ZonedDateTime.now())) {
                 ScheduleEmailResponse scheduleEmailResponse = new ScheduleEmailResponse(false,
-                        "dateTime must be after current time");
+                        "dateTime must be after current time    ");
                 return ResponseEntity.badRequest().body(scheduleEmailResponse);
             }
 
